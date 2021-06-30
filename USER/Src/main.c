@@ -20,6 +20,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include <stdio.h>
+#include "SEGGER_RTT.h"
 
 /** @addtogroup STM32F7xx_HAL_Examples
   * @{
@@ -70,10 +71,12 @@ int main(void)
   /* Add your application code here */
 
 
+    RTT_Init("Real Time Transfer [RTT] init.\n");
+    print_log("Hello welcome to STM32 world!\n");
   /* Infinite loop */
   while (1)
   {
-      printf("Hello welcome to STM32 world!"):
+      
   }
 }
 
